@@ -70,9 +70,15 @@ export default function Chat() {
             <h2>Configuración de Chat</h2>
             <h3>Cambiar tema:</h3>
             <select name="" id="">
-              <option value="">Claro</option>
-              <option value="">Oscuro</option>
+              <option value="light">Claro</option>
+              <option value="dark">Oscuro</option>
             </select><br></br>
+            <h3>Privacidad:</h3>
+            <h5>Confirmaciín de lectura</h5>
+              <label className="switch">
+               <input type="checkbox"/>
+               <span className="slider"></span>
+             </label>
             <button onClick={handleClosePopup}>Cerrar</button>
           </div>
        </section>
