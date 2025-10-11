@@ -5,32 +5,27 @@ const Help = () => {
   return (
     <main>
 
-      <header>
-        <div className="header">
-          <img width={100} src={logo} alt="logo de whatsapp" />
+      <header className="header">
+        <img width={50} src={logo} alt="logo de whatsapp" />
+        <div>
           <h2>ChatApp Clone</h2>
           <h4>Centro de Ayuda y Documentación</h4>
         </div>
       </header>
-
-      <section className="">
-        <div>
-          <h1>
-              Todo lo que necesitas saber sobre
-              <span>
-                nuestro Chat App
-              </span>
-            </h1>
-        </div>
-          <div>
+      <div>
+        <div className="title">
+          <h1 className="title-span">
+            Todo lo que necesitas saber sobre <span> nuestro Chat App </span>
+          </h1>
             <h3>
               Descubre cómo funciona, las tecnologías que lo impulsan y hacia dónde nos dirigimos.
             </h3>
-          </div>
-      </section>
-
-      <section>
-        <div>
+        </div>
+      </div>
+      <div className="wrapper">
+      <div className="cont-operation">
+       <div className="operation">
+        <div> 
           <h2>
             Funcionamiento general del chat
           </h2>
@@ -39,8 +34,11 @@ const Help = () => {
             La aplicación permite a los usuarios comunicarse mediante mensajes de texto y gestionar sus contactos de forma sencilla.
           </p>
         </div>
+      </div>
 
-        <div>
+        <div className="operations">
+
+        <div className="box-op">
           <h3>
             Mensajería Instantánea
           </h3>
@@ -49,7 +47,7 @@ const Help = () => {
           </p>
         </div>
 
-        <div>
+        <div className="box-op">
           <h3>
             Gestión de contactos
           </h3>
@@ -58,7 +56,7 @@ const Help = () => {
           </p>
         </div>
 
-        <div>
+        <div className="box-op">
           <h3>
             Autenticación
           </h3>
@@ -67,7 +65,7 @@ const Help = () => {
           </p>
         </div>
 
-        <div>
+        <div className="box-op">
           <h3>
             Privacidad
           </h3>
@@ -76,7 +74,9 @@ const Help = () => {
           </p>
         </div>
 
-        <div>
+        </div>
+
+       <div className="characteristics">
           <h4>⚡︎ Características Principales</h4>
           <ul>
             <li>
@@ -105,7 +105,8 @@ const Help = () => {
 
           </ul>
         </div>
-      </section>
+        </div>
+        </div>
 
 <section>
         <div>
@@ -245,10 +246,9 @@ const Help = () => {
       <h2>¿Listo para comenzar?</h2>
       <button><p className="text-info"> Ir a <Link to="/chat">Chat</Link></p></button>
      </footer>
-
+     
     </main>
-
-  )
+    )
 }
 
 export default Help
