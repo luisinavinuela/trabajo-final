@@ -37,7 +37,6 @@ const Help = () => {
       </div>
 
         <div className="operations">
-
         <div className="box-op">
           <h3>
             Mensajería Instantánea
@@ -77,29 +76,29 @@ const Help = () => {
         </div>
 
        <div className="characteristics">
-          <h4>⚡︎ Características Principales</h4>
+          <h4> Características Principales</h4>
           <ul>
             <li>
             <span>
-              ➤ Envío y recepción de mensajes de texto
+               Envío y recepción de mensajes de texto
             </span>
             </li>
 
             <li>
             <span>
-              ➤ Agregar y eliminar contactos
+               Agregar y eliminar contactos
             </span>
             </li>
 
             <li>
             <span>
-              ➤ Sistema de inicio de sesión con contraseña
+               Sistema de inicio de sesión con contraseña
             </span>
             </li>
 
             <li>
             <span>
-              ➤ Interfaz intuitiva y fácil de usar
+               Interfaz intuitiva y fácil de usar
             </span>
             </li>
 
@@ -108,8 +107,9 @@ const Help = () => {
         </div>
         </div>
 
-<section>
-        <div>
+<div className="wrapper"> 
+  <div className="cont-technologie">
+        <div className="technologie">
           <h2>
             Tecnologías Utilizadas
           </h2>
@@ -118,8 +118,8 @@ const Help = () => {
              y robustas que garantizan una experiencia rápida, segura y escalable.
           </p>
         </div>
-
-        <div>
+<div className="technologies">
+        <div className="box-techno">
           <h3>
             React + JavaScript
           </h3>
@@ -129,7 +129,7 @@ const Help = () => {
           </p>
         </div>
 
-        <div>
+        <div className="box-techno">
           <h3>
             Vite
           </h3>
@@ -139,7 +139,7 @@ const Help = () => {
           </p>
         </div>
 
-        <div>
+        <div className="box-techno">
           <h3>
             CSS
           </h3>
@@ -149,7 +149,7 @@ const Help = () => {
           </p>
         </div>
 
-        <div>
+        <div className="box-techno">
           <h3>
             JSON
           </h3>
@@ -158,8 +158,8 @@ const Help = () => {
             y escribir para humanos y máquinas.
           </p>
         </div>
-
-        <div>
+      </div>
+     <div className="stack-tecnic">
           <h4>Stack Técnico Completo</h4>
           <ul>
             <li>
@@ -188,20 +188,23 @@ const Help = () => {
               </span>
             </li>              
           </ul>
-        </div>
-      </section>
+      </div>
+   </div>
+  </div>
 
-      <section>
-        <div>
+<div className="wrapper">
+  <div className="cont-future">
+    <div className="future">
           <h2>
-            Posibles Mejoras Futuras
+          Posibles Mejoras Futuras
           </h2>
           <p>
-            Estamos comprometidos con la mejora continua de la aplicación. 
-            Aquí están algunas de las características que planeamos implementar en futuras versiones.
+          Estamos comprometidos con la mejora continua de la aplicación. 
+          Aquí están algunas de las características que planeamos implementar en futuras versiones.
           </p>
-        </div>
-        <div>
+    </div>
+      <div className="futures">
+        <div className="box-future">
           <h3>
             Llamadas de Voz y Video
           </h3>
@@ -211,7 +214,7 @@ const Help = () => {
           </p>
         </div>
 
-        <div>
+        <div className="box-future">
           <h3>
             Personalización Avanzada
           </h3>
@@ -221,7 +224,7 @@ const Help = () => {
           </p>
         </div>
 
-        <div>
+        <div className="box-future">
           <h3>
             Estados y Stories
           </h3>
@@ -231,7 +234,7 @@ const Help = () => {
           </p>
         </div>
 
-        <div>
+        <div className="box-future">
           <h3>
             Compartir Ubicación en Tiempo Real
           </h3>
@@ -240,12 +243,15 @@ const Help = () => {
             con contactos seleccionados.
           </p>
         </div>
-      </section>
-
-     <footer>
+    </div> 
+  </div>
+</div>
+<div className="cont-footer">
+     <footer className="footer">
       <h2>¿Listo para comenzar?</h2>
-      <button><p className="text-info"> Ir a <Link to="/chat">Chat</Link></p></button>
+      <button><p> Ir a </p> <Link to="/chat">Chat</Link></button>
      </footer>
+</div>
      
     </main>
     )
