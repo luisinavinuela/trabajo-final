@@ -74,12 +74,20 @@ export default function Chat() {
               <option value="dark">Oscuro</option>
             </select><br></br>
             <h3>Privacidad:</h3>
-            <h5>Confirmaciín de lectura</h5>
+            <h5>Confirmación de lectura</h5>
               <label className="switch">
                <input type="checkbox"/>
                <span className="slider"></span>
              </label>
-            <button onClick={handleClosePopup}>Cerrar</button>
+            <h3>Notificaciones:</h3>
+            <h5>Mostrar Notificaciones</h5>
+              <label className="switch">
+               <input type="checkbox"/>
+               <span className="slider"></span>
+             </label>
+            <h3>Dispositivos vinculados:</h3>
+             <button className="attach">Vincular dispositivos</button>
+            <button className="closesesion" onClick={handleClosePopup}>Cerrar</button>
           </div>
        </section>
       }
