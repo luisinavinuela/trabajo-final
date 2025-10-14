@@ -20,7 +20,8 @@ export default function Sidebar() {
   }
 
   return (
-    <div className="sidebar">
+    <div className="chat-layout">
+      <div className="sidebar">
       <input
         type="text"
         placeholder="Search..."
@@ -63,6 +64,7 @@ export default function Sidebar() {
           </li>
         ))}
       </ul>
+    </div>
     </div>
   )
 }

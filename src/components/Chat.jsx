@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom"
 export default function Chat() {
   const [msg, setMsg] = useState("")
   const [showPopup, setShowPopup] = useState(false)
+  const [chatBgColor, setChatBgColor] = useState("");
 
   // 1. Obtenemos del contexto todo lo necesario
   const { users, selectedUser, setUsers } = useChat()
@@ -62,6 +63,7 @@ export default function Chat() {
     setShowPopup(false)
   }
 
+
   return (
  <>
       {
@@ -73,20 +75,17 @@ export default function Chat() {
               <option value="light">Claro</option>
               <option value="dark">Oscuro</option>
             </select><br></br>
+            <h3>Color de fondo del chat:</h3>
+              <input
+                type="color"
+                onChange={(e) => setChatBgColor(e.target.value)}
+              />
             <h3>Privacidad:</h3>
             <h5>Confirmación de lectura</h5>
               <label className="switch">
                <input type="checkbox"/>
                <span className="slider"></span>
              </label>
-            <h3>Notificaciones:</h3>
-            <h5>Mostrar Notificaciones</h5>
-              <label className="switch">
-               <input type="checkbox"/>
-               <span className="slider"></span>
-             </label>
-            <h3>Dispositivos vinculados:</h3>
-             <button className="attach">Vincular dispositivos</button>
             <button className="closesesion" onClick={handleClosePopup}>Cerrar</button>
           </div>
        </section>
@@ -114,7 +113,10 @@ export default function Chat() {
           </div>
         </header>
 
-        <section className="chat-messages">
+          <section
+            className="chat-messages"
+            style={{ backgroundColor: chatBgColor }}
+          >
           {user.messages.map((message) => (
             <div className="message" key={message.id}>
               <p>{message.text}</p>
