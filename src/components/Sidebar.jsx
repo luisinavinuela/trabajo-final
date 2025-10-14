@@ -20,7 +20,6 @@ export default function Sidebar() {
   }
 
   return (
-    <div className="chat-layout">
       <div className="sidebar">
       <input
         type="text"
@@ -64,7 +63,6 @@ export default function Sidebar() {
           </li>
         ))}
       </ul>
-    </div>
     </div>
   )
 }
